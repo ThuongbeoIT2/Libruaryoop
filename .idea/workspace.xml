@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bb29d63-a5ab-490d-bd12-a5d5a424c778" name="Changes" comment="thuong up">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/DocGiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/DocGiaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/NhanSuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/NhanSuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/PhieuMuonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/PhieuMuonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/SachController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/SachController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/TheTVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/TheTVController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Controller/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Repository/SachRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Repository/SachRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Service/SachService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/libruaryoop/Service/SachService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/add_docgia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/add_docgia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/capthe_docgia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/capthe_docgia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/edit_docgia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/edit_docgia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/list_docgia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/docgia/list_docgia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/add_nhansu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/add_nhansu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/edit_nhansu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/edit_nhansu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/list_nhansu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/list_nhansu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/luutru_nhansu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/nhansu/luutru_nhansu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/add_chitiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/add_chitiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/add_phieumuon.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/add_phieumuon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/edit_phieumuon.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/edit_phieumuon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/hangdoi_phieumuon.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/hangdoi_phieumuon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/list_chitiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/list_chitiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/list_luutru.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/list_luutru.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/list_phieumuon.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/phieumuon/list_phieumuon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/add_sach.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/add_sach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/edit_sach.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/edit_sach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/list_sach.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/list_sach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/luutru_sach.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sach/luutru_sach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/add_thetv.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/add_thetv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/edit_thetv.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/edit_thetv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/list_thetv.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/list_thetv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/luutru-thetv.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/thetv/luutru-thetv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/thongke/muonnhieu_sach.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/thongke/muonnhieu_sach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/thongke/thongke_sach.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/thongke/thongke_sach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/home_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/home_admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/home_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/home_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/welcom.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/welcom.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cb23aca2-9c44-4f34-a4c8-cb781f760eba" />
+        <option name="url" value="https://github.com/ThuongbeoIT2/LibruaryDoAn.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2OQHl0cuxLbvlX1POGUUi31QKy2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java Spring/Libruaryoop/src/main/resources/static/admin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;429a0f0f702e08edad338eb1d46e66dd&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java Spring\Libruaryoop\src\main\resources\static\admin" />
+      <recent name="C:\Java Spring\Libruaryoop\src\main\resources\static\home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Java Spring\Libruaryoop\src\main\resources\static\admin\images" />
+      <recent name="C:\Java Spring\Libruaryoop\src\main\resources\static\home\img" />
+      <recent name="C:\Java Spring\Libruaryoop\src\main\resources\templates\admin\nxb" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LibruaryoopApplication">
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" requestIdentifier="#8" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="LibruaryoopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Libruaryoop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.libruaryoop.LibruaryoopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #8" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bb29d63-a5ab-490d-bd12-a5d5a424c778" name="Changes" comment="" />
+      <created>1681486032363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681486032363</updated>
+      <workItem from="1681486033482" duration="405000" />
+      <workItem from="1681527491641" duration="62000" />
+      <workItem from="1681701312461" duration="2668000" />
+      <workItem from="1681718497331" duration="7362000" />
+      <workItem from="1681732554213" duration="6456000" />
+      <workItem from="1681742308177" duration="1756000" />
+      <workItem from="1681745287765" duration="19191000" />
+      <workItem from="1681776169484" duration="104000" />
+      <workItem from="1681776367634" duration="308000" />
+      <workItem from="1681786357485" duration="4021000" />
+      <workItem from="1681814882521" duration="17565000" />
+      <workItem from="1681865547869" duration="1616000" />
+      <workItem from="1681895439816" duration="8304000" />
+      <workItem from="1681907814656" duration="6508000" />
+      <workItem from="1681916804630" duration="5897000" />
+      <workItem from="1681930617422" duration="37000" />
+      <workItem from="1681983655448" duration="1084000" />
+      <workItem from="1681991643087" duration="11123000" />
+      <workItem from="1682051527729" duration="810000" />
+      <workItem from="1682052347385" duration="5678000" />
+      <workItem from="1682073289882" duration="6595000" />
+      <workItem from="1682126843322" duration="12765000" />
+      <workItem from="1682150506548" duration="263000" />
+      <workItem from="1682165420797" duration="621000" />
+      <workItem from="1682178001279" duration="5780000" />
+      <workItem from="1682210351460" duration="6172000" />
+      <workItem from="1682222149802" duration="4568000" />
+      <workItem from="1682226738783" duration="2195000" />
+      <workItem from="1682234808232" duration="358000" />
+      <workItem from="1682246150300" duration="3880000" />
+      <workItem from="1682267056809" duration="2884000" />
+      <workItem from="1682340530964" duration="20199000" />
+      <workItem from="1682381962525" duration="3033000" />
+      <workItem from="1682433931882" duration="1621000" />
+      <workItem from="1682436726429" duration="1996000" />
+      <workItem from="1682566838201" duration="4000" />
+      <workItem from="1682567609665" duration="61000" />
+      <workItem from="1682587778531" duration="5000" />
+      <workItem from="1683032744632" duration="578000" />
+      <workItem from="1683122032395" duration="5247000" />
+      <workItem from="1683172296722" duration="5000" />
+      <workItem from="1683174069352" duration="2452000" />
+      <workItem from="1683216530970" duration="1217000" />
+      <workItem from="1683254302619" duration="878000" />
+      <workItem from="1683255377494" duration="178000" />
+      <workItem from="1683292534646" duration="9105000" />
+      <workItem from="1683302578864" duration="4031000" />
+      <workItem from="1683335916592" duration="7463000" />
+      <workItem from="1683359408226" duration="1080000" />
+      <workItem from="1683375329154" duration="10063000" />
+      <workItem from="1683426876354" duration="6095000" />
+      <workItem from="1683433402205" duration="3761000" />
+      <workItem from="1683447500099" duration="391000" />
+      <workItem from="1683468147833" duration="5574000" />
+    </task>
+    <task id="LOCAL-00001" summary="up">
+      <created>1683342295314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683342295314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="thuong up">
+      <created>1683475358658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683475358658</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="up" />
+    <MESSAGE value="thuong" />
+    <MESSAGE value="thuong up" />
+    <option name="LAST_COMMIT_MESSAGE" value="thuong up" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,47 @@
+POST http://localhost:8086/update-nhansu
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T205303.500.json
+
+###
+
+POST http://localhost:8086/add-nhansu
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T201454.500.json
+
+###
+
+GET http://localhost:8086/add-nhansu
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T200926.200.html
+
+###
+
+GET http://localhost:8086/luutru-nhansu
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T200614.200.html
+
+###
+
+GET http://localhost:8086/list-nhansu
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T200504.200.html
+
+###
+

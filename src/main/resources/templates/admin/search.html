@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+  <style>
+    .search-container {
+      position: relative;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid #ccc;
+    }
+
+    ul.suggestions {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.suggestions li {
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+
+    ul.suggestions li:hover {
+      background-color: #f2f2f2;
+    }
+
+  </style>
+</head>
+<body>
+<form class="form" id="form" th:action="@{/Search}" th:object="${key}" method="post" enctype="multipart/form-data">
+    <div class="widget">
+
+
+        <div class="tab_container">
+            <input type="text" placeholder="Search..." name="key" id="key">
+            <ul class="suggestions"></ul>
+
+            <div class="formSubmit">
+                <input type="submit" value="Thêm mới" class="redB" />
+                <input type="reset" value="Hủy bỏ" class="basic" />
+            </div>
+        </div>
+    </div>
+</form>
+<div class="widget">
+    <div class="title">
+        <span class="titleIcon"><input type="checkbox" id="titleCheck" name="titleCheck" /></span>
+    </div>
+
+    <table cellpadding="0" cellspacing="0" width="100%" class="sTable mTable myTable" id="checkAll">
+
+
+        <thead>
+        <tr>
+
+            <td style="width:60px;">Mã số</td>
+            <td style="width:75px;">Tên Sách</td>
+            <td style="width:90px;">Tác giả</td>
+            <td style="width:100px;">Năm xuất bản</td>
+            <td style="width:75px;">Số lượng</td>
+            <td style="width:55px;">Đã mượn</td>
+            <td style="width:55px;">Nhà xuất bản</td>
+            <td style="width:55px;">Sửa</td>
+            <td style="width:55px;">Nhập thêm</td>
+            <td style="width:55px;">Lưu trữ</td>
+        </tr>
+        </thead>
+        <th:block th:each="sach : ${listSearchSach}">
+            <tr>
+                <td th:text="${sach.maSach}"></td>
+                <td th:text="${sach.tenSach}"></td>
+                <td th:text="${sach.tacGia}"></td>
+                <td th:text="${sach.namXB}"></td>
+                <td th:text="${sach.soLuongCon}"></td>
+                <td th:text="${sach.daMuon}">
+                <td th:text="${sach.NXB}">
+                <td><a th:href="@{'/edit-sach/'+ ${sach.maSach}}" >Chỉnh sửa</a></td>
+                <td><a th:href="@{'/add-sach/'+ ${sach.maSach}}" > Nhập thêm</a></td>
+                <td><a class="btn btn-sm btn-white" th:href="@{'/delete-sach/'+ ${sach.maSach}}"
+                       onclick="return confirm('Bạn có chắc không?')">
+                    Lưu trữ
+                </a>
+                </td>
+            </tr>
+
+        </th:block>
+
+
+
+
+    </table>
+</div>
+
+<script>
+    const input = document.querySelector('input[type="text"]');
+    const suggestions = document.querySelector('.suggestions');
+
+    const search = () => {
+        const query = input.value.toLowerCase();
+        const filtered = suggestionsArray.filter(item => item.toLowerCase().includes(query));
+        const html = filtered.map(item => `<li>${item}</li>`).join('');
+        suggestions.innerHTML = html;
+        if (query.length > 0) {
+            suggestions.style.display = 'block';
+        } else {
+            suggestions.style.display = 'none';
+        }
+    };
+
+    input.addEventListener('input', search);
+
+    const suggestionsArray = ['Apple', 'Banana', 'Cherry', 'Durian', 'Elderberry'];
+
+
+
+</script>
+</body>
+</html>

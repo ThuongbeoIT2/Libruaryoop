@@ -1,0 +1,44 @@
+<div class="wrapper">
+
+  <!-- Form -->
+  <form class="form" id="form" th:action="@{/nhapthem}" th:object="${count}" method="post" enctype="multipart/form-data">
+    <div class="widget">
+      <div class="title">
+        <h6>Nhập Sách</h6>
+      </div>
+
+      <div class="tab_container">
+        <div id='tab1' class="tab_content pd0">
+          <!-- Tên -->
+          <div class="formRow">
+            <label class="formLeft" for="param_name">Mã Sách:<span class="req">*</span></label>
+            <div class="formRight">
+              <span class="oneTwo"><input name="maSach" id="param_name" _autocheck="true" type="text" th:field="${count.maSach}" readonly/></span>
+              <span name="name_autocheck" class="autocheck"></span>
+              <div name="name_error" class="clear error"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <!-- Tên -->
+          <div class="formRow">
+            <label class="formLeft" for="param_name">Số Lượng:<span class="req">*</span></label>
+            <div class="formRight">
+              <span class="oneTwo"><input name="name"  _autocheck="true" type="text" th:field="${count.soLuong}" /></span>
+              <span name="name_autocheck" class="autocheck"></span>
+              <div name="name_error" class="clear error"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+
+        </div><!-- End tab_container-->
+
+        <div class="formSubmit">
+          <input type="submit" value="Thêm mới" class="redB" />
+          <input type="reset" value="Hủy bỏ" class="basic" />
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
