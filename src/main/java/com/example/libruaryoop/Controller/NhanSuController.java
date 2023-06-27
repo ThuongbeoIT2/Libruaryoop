@@ -47,10 +47,16 @@ public class NhanSuController {
         return "admin/nhansu/add_nhansu";
     }
     @PostMapping("/add-nhansu")
-    public String addUser(@ModelAttribute("user") NhanSu user,HttpSession session) {
+    public String addUser(@ModelAttribute("user") NhanSu user,HttpSession session,Model model) {
         String username = (String) session.getAttribute("username");
         if (username == null) {
             return "redirect:/login";
+        }
+        NhanSu nhanSu=nhanSuService.findUserByUsername(user.getUsername());
+        if(nhanSu!=null){
+            String message="Tai khoan da ton tai. Vui long tao lai";
+            model.addAttribute("message",message);
+            return "admin/nhansu/add_nhansu";
         }
         user.setHoTen(user.getHoTen());
         user.setSoDienThoai(user.getSoDienThoai());
@@ -60,6 +66,7 @@ public class NhanSuController {
         System.out.println(user);
         nhanSuService.addUser(user);
         return "redirect:/list-nhansu";
+
     }
 
 //

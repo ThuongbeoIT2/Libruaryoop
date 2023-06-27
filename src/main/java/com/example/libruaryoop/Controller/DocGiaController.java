@@ -44,7 +44,7 @@ public class DocGiaController {
         return "admin/docgia/add_docgia";
     }
     @PostMapping("/add-docgia")
-    public String addUser(@ModelAttribute("docGia") DocGia docGia, HttpSession session) {
+    public String addUser( @ModelAttribute("docGia") DocGia docGia, HttpSession session) {
         String username = (String) session.getAttribute("username");
         if (username == null) {
             return "redirect:/login";

@@ -63,7 +63,6 @@ public class PhieuMuonService {
             existing.setChiTietMuon(phieuMuon.getChiTietMuon());
             existing.setNgayMuon(phieuMuon.getNgayMuon());
             existing.setNgayTra(phieuMuon.getNgayTra());
-            existing.setCheckPhieuMuon(true);
             existing.setCheckluutru(false);
             return phieuMuonRepo.save(existing);
         }

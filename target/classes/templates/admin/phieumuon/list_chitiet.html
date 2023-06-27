@@ -83,7 +83,7 @@
 
       <li class="home">
 
-        <a th:href="@{admin/home.html}" class="active" id="current">
+        <a class="active" id="current">
           <span>Bảng điều khiển</span>
           <strong></strong>
         </a>
@@ -92,9 +92,9 @@
       </li>
       <li class="tran">
 
-        <a th:href="@{admin/tran.html}" class=" exp" >
+        <a class=" exp" >
           <span>Quản lý phiếu </span>
-          <strong>2</strong>
+          <strong>4</strong>
         </a>
 
         <ul class="sub">
@@ -119,7 +119,7 @@
       </li>
       <li class="product">
 
-        <a th:href="@{admin/product.html}" class=" exp" >
+        <a class=" exp" >
           <span>Tủ Sách</span>
           <strong>3</strong>
         </a>
@@ -142,7 +142,7 @@
       </li>
       <li class="account">
 
-        <a th:href="@{admin/account.html}" class=" exp" >
+        <a class=" exp" >
           <span>Tài khoản</span>
           <strong>3</strong>
         </a>
@@ -165,7 +165,7 @@
       </li>
       <li class="support">
 
-        <a th:href="@{admin/support.html}" class=" exp" >
+        <a class=" exp" >
           <span>Thẻ thư viện</span>
           <strong>3</strong>
         </a>
@@ -179,28 +179,28 @@
             <a th:href="@{/add-thetv}">
               Thêm thẻ 							</a>
           </li>
-          \<li >
-          <a th:href="@{/luutru-thetv}">
-            Lưu trữ							</a>
-        </li>
+          <li >
+            <a th:href="@{/luutru-thetv}">
+              Lưu trữ							</a>
+          </li>
         </ul>
 
       </li>
       <li class="content">
 
-        <a th:href="@{admin/content.html}" class=" exp" >
+        <a class=" exp" >
           <span>Thống Kê</span>
           <strong>2</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{thongke-sach}">
-              Danh sách Sách cần nhập thêm							</a>
+            <a th:href="@{/thongke-sach}">
+              Sách cần nhập thêm							</a>
           </li>
           <li >
-            <a th:href="@{thongke}">
-              Sách mượn nhiều					</a>
+            <a th:href="@{/thongke}">
+              Sách đã cho mượn					</a>
           </li>
 
         </ul>
@@ -208,7 +208,7 @@
       </li>
       <li class="content">
 
-        <a th:href="@{admin/content.html}" class=" exp" >
+        <a class=" exp" >
           <span>Độc Giả</span>
           <strong>3</strong>
         </a>
@@ -226,14 +226,10 @@
             <a th:href="@{/capthe-docgia}">
               Danh Sách Cấp Thẻ					</a>
           </li>
-
         </ul>
-
       </li>
     </ul>
-
   </div>
-  <div class="clear"></div>
 </div>
 
 
@@ -250,7 +246,7 @@
 
       <div class="userNav">
         <ul>
-          <li><a href="" target="_blank">
+          <li><a href="/home">
             <img style="margin-top:7px;" th:src="@{../admin/images/icons/light/home.png}" />
             <span>Trang chủ</span>
           </a></li>

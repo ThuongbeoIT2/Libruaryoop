@@ -20,7 +20,7 @@ public class SearchController {
 
     @GetMapping("/list-search")
     public String SearchNhanSu(Model model) {
-       model.addAttribute("listSach",sachService.findAll());
+       model.addAttribute("listSach",sachService.findAllCheckTrue());
         model.addAttribute("key",new Search());
         return "admin/search";
     }

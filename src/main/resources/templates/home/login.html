@@ -327,58 +327,45 @@
 <div class="container" id="container">
 
   <div class="form-container login-container">
-    <form action="#" th:action="@{/login}" method="post">
+    <form id="form" action="#" th:action="@{/login}" method="post">
 
       <h1>Login</h1>
-      <input type="text" name="username" th:value="${user.username}" placeholder="Username">
-      <input type="password" name="password" th:value="${user.password}" placeholder="Password">
-      <button>Login</button>
+      <input type="text" id="email" name="email" th:value="${user.email}" placeholder="Email"
+             class="form-control"/> <br/>
+      <input type="password" th:placeholder="Password"
+             id="password" name="password" th:value="${user.password}" class="form-control"/> <br/>
+
+      <div align="center" th:if="${param.error}">
+        <p class="error-message">User Name or Password invalid, please verify or Account Disabled</p>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"
+              th:text="Login"></button>
     </form>
   </div>
 
-    <div class="overlay-container" >
-      <img th:src="@{../admin/images/thuvien.jpg} ">
-    </div>
-
-      <h1>Login hire.</h1>
-      <input type="text" name="username" th:value="${user.username}" placeholder="username">
-      <input type="password" name="password" th:value="${user.password}" placeholder="password">
-      <div class="content">
-        <div class="checkbox">
-          <input type="checkbox" name="checkbox" id="checkbox">
-          <label>Remember me</label>
-        </div>
-        <div class="pass-link">
-          <a href="#">Forgot password?</a>
-        </div>
-      </div>
-      <button>Login</button>
-      <span>or use your account</span>
-      <div class="social-container">
-        <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-        <a href="#" class="social"><i class="lni lni-google"></i></a>
-        <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
-      </div>
-    </form>
+  <div class="overlay-container" >
+    <img th:src="@{../admin/images/thuvien.jpg} ">
   </div>
-
-
-
-
+</div>
 </div>
 
-<script src="script.js">
-  const registerButton = document.getElementById("register");
-  const loginButton = document.getElementById("login");
-  const container = document.getElementById("container");
-
-  registerButton.addEventListener("click", () => {
-    container.classList.add("right-panel-active");
-  });
-
-  loginButton.addEventListener("click", () => {
-    container.classList.remove("right-panel-active");
-  });
+<script>
+  document.getElementById("form").addEventListener("submit", function (event) {
+    var array = document.getElementsByTagName("input");
+    if(array[0].value == "") {
+      document.querySelector(".validateUsername").innerHTML = "Username không được để trống!";
+      event.preventDefault();
+    } else {
+      document.querySelector(".validateUsername").innerHTML = "";
+    }
+    if(array[1].value == "") {
+      document.querySelector(".validatePassword").innerHTML = "Password không được để trống!";
+      event.preventDefault();
+    } else {
+      document.querySelector(".validatePassword").innerHTML = "";
+    }
+  })
 </script>
 
 </body>

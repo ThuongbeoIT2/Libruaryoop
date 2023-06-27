@@ -7,7 +7,9 @@
     .search-container {
       position: relative;
     }
-
+    body {
+        overflow: hidden;
+    }
     input[type="text"] {
       width: 100%;
       padding: 12px 20px;
@@ -52,7 +54,7 @@
             <ul class="suggestions"></ul>
 
             <div class="formSubmit">
-                <input type="submit" value="Thêm mới" class="redB" />
+                <input type="submit" value="Tìm kiếm" class="redB" />
                 <input type="reset" value="Hủy bỏ" class="basic" />
             </div>
         </div>
@@ -63,11 +65,11 @@
         <span class="titleIcon"><input type="checkbox" id="titleCheck" name="titleCheck" /></span>
     </div>
 
-    <table cellpadding="0" cellspacing="0" width="100%" class="sTable mTable myTable" id="checkAll">
+    <table border="1" cellpadding="0" cellspacing="0" width="100%" class="sTable mTable myTable" id="checkAll">
 
 
         <thead>
-        <tr>
+        <tr style="padding-left: 5px;">
 
             <td style="width:60px;">Mã số</td>
             <td style="width:75px;">Tên Sách</td>
@@ -76,9 +78,7 @@
             <td style="width:75px;">Số lượng</td>
             <td style="width:55px;">Đã mượn</td>
             <td style="width:55px;">Nhà xuất bản</td>
-            <td style="width:55px;">Sửa</td>
-            <td style="width:55px;">Nhập thêm</td>
-            <td style="width:55px;">Lưu trữ</td>
+
         </tr>
         </thead>
         <th:block th:each="sach : ${listSearchSach}">
@@ -90,19 +90,10 @@
                 <td th:text="${sach.soLuongCon}"></td>
                 <td th:text="${sach.daMuon}">
                 <td th:text="${sach.NXB}">
-                <td><a th:href="@{'/edit-sach/'+ ${sach.maSach}}" >Chỉnh sửa</a></td>
-                <td><a th:href="@{'/add-sach/'+ ${sach.maSach}}" > Nhập thêm</a></td>
-                <td><a class="btn btn-sm btn-white" th:href="@{'/delete-sach/'+ ${sach.maSach}}"
-                       onclick="return confirm('Bạn có chắc không?')">
-                    Lưu trữ
-                </a>
-                </td>
+
             </tr>
 
         </th:block>
-
-
-
 
     </table>
 </div>

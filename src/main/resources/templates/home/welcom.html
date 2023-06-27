@@ -183,10 +183,10 @@
                         <a th:href="@{add-thetv}">
                             Thêm thẻ 							</a>
                     </li>
-                    \<li >
-                    <a th:href="@{luutru-thetv}">
-                        Lưu trữ							</a>
-                </li>
+                    <li >
+                        <a th:href="@{luutru-thetv}">
+                            Lưu trữ							</a>
+                    </li>
                 </ul>
 
             </li>
@@ -310,12 +310,16 @@
 
             <div class="widget">
 
-        </div>
-        <div class="clear mt30"></div>
-            Giới thiệu nhóm
-        <!-- Footer -->
+            </div>
+            <div class="clear mt30"></div>
+            <h1 th:text="${error}"></h1>
 
-    </div>
-    <div class="clear"></div>
-    </body>
+            Đây là trang lỗi đăng nhập nhé
+
+            Giới thiệu nhóm
+            <!-- Footer -->
+ Trang này gắn ảnh nhóm vào  rồi đẩy đường dẫn Login vào hộ cái
+        </div>
+        <div class="clear"></div>
+  </body>
 </html>
