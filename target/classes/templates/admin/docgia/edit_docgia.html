@@ -61,6 +61,56 @@
   <link rel="stylesheet" type="text/css" th:href="@{../js/jquery/colorbox/colorbox.css}" media="screen" />
 
   <script  th:src="@{../js/custom_admin.js}" type="text/javascript"></script>
+  <style>
+    .main_container {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:#f2f2f2;
+      box-shadow: 2px 1px 3px 2px #bc51c2;
+    }
+    .form_container {
+      border: 1px solid #bc51c2;
+      padding: 25px 40px 67px;
+      margin-top: 20px;
+      box-shadow: 1px 1px 4px 4px #ddd;
+    }
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      color: #bc51c2;
+    }
+    input[type=text], select {
+      width: 300px !important;
+      padding: 9px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .req {
+      color: red;
+    }
+    .formRow {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+    }
+    .formLeft {
+      width: 133px !important;
+    }
+    .formValidate {
+      display: flex;
+      align-items: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -83,7 +133,7 @@
 
       <li class="home">
 
-        <a th:href="@{admin/home.html}" class="active" id="current">
+        <a class="active" id="current">
           <span>Bảng điều khiển</span>
           <strong></strong>
         </a>
@@ -92,26 +142,26 @@
       </li>
       <li class="tran">
 
-        <a th:href="@{admin/tran.html}" class=" exp" >
+        <a class=" exp" >
           <span>Quản lý phiếu </span>
-          <strong>2</strong>
+          <strong>4</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{list-phieumuon}">
+            <a th:href="@{/list-phieumuon}">
               Phiếu mượn							</a>
           </li>
           <li >
-            <a th:href="@{queue-phieumuon}">
+            <a th:href="@{/queue-phieumuon}">
               Hàng Đợi						</a>
           </li>
           <li >
-            <a th:href="@{add-phieumuon}">
+            <a th:href="@{/add-phieumuon}">
               Thêm phiếu						</a>
           </li>
           <li >
-            <a th:href="@{list-luutru}">
+            <a th:href="@{/list-luutru}">
               Phiếu trả					</a>
           </li>
         </ul>
@@ -119,22 +169,22 @@
       </li>
       <li class="product">
 
-        <a th:href="@{admin/product.html}" class=" exp" >
+        <a class=" exp" >
           <span>Tủ Sách</span>
           <strong>3</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{list-sach}">
+            <a th:href="@{/list-sach}">
               Sách 							</a>
           </li>
           <li >
-            <a th:href="@{add-sach}">
+            <a th:href="@{/add-sach}">
               Thêm Sách						</a>
           </li>
           <li >
-            <a th:href="@{luutru-sach}">
+            <a th:href="@{/luutru-sach}">
               Kho							</a>
           </li>
         </ul>
@@ -142,22 +192,22 @@
       </li>
       <li class="account">
 
-        <a th:href="@{admin/account.html}" class=" exp" >
+        <a class=" exp" >
           <span>Tài khoản</span>
           <strong>3</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{list-nhansu}">
+            <a th:href="@{/list-nhansu}">
               Ban quản trị - nhân viên trực							</a>
           </li>
           <li >
-            <a th:href="@{add-nhansu}">
+            <a th:href="@{/add-nhansu}">
               Thêm nhân viên						</a>
           </li>
           <li >
-            <a th:href="@{luutru-nhansu}">
+            <a th:href="@{/luutru-nhansu}">
               Danh sách nhân viên					</a>
           </li>
         </ul>
@@ -165,42 +215,42 @@
       </li>
       <li class="support">
 
-        <a th:href="@{admin/support.html}" class=" exp" >
+        <a class=" exp" >
           <span>Thẻ thư viện</span>
           <strong>3</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{list-thetv}">
+            <a th:href="@{/list-thetv}">
               Danh sách thẻ					</a>
           </li>
           <li >
-            <a th:href="@{add-thetv}">
+            <a th:href="@{/add-thetv}">
               Thêm thẻ 							</a>
           </li>
-          \<li >
-          <a th:href="@{luutru-thetv}">
-            Lưu trữ							</a>
-        </li>
+          <li >
+            <a th:href="@{/luutru-thetv}">
+              Lưu trữ							</a>
+          </li>
         </ul>
 
       </li>
       <li class="content">
 
-        <a th:href="@{admin/content.html}" class=" exp" >
+        <a class=" exp" >
           <span>Thống Kê</span>
           <strong>2</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{thongke-sach}">
-              Danh sách Sách cần nhập thêm							</a>
+            <a th:href="@{/thongke-sach}">
+              Sách cần nhập thêm							</a>
           </li>
           <li >
-            <a th:href="@{thongke}">
-              Sách mượn nhiều					</a>
+            <a th:href="@{/thongke}">
+              Sách đã cho mượn					</a>
           </li>
 
         </ul>
@@ -208,22 +258,22 @@
       </li>
       <li class="content">
 
-        <a th:href="@{admin/content.html}" class=" exp" >
+        <a class=" exp" >
           <span>Độc Giả</span>
           <strong>3</strong>
         </a>
 
         <ul class="sub">
           <li >
-            <a th:href="@{list-docgia}">
+            <a th:href="@{/list-docgia}">
               Danh sách Độc Giả							</a>
           </li>
           <li >
-            <a th:href="@{add-docgia}">
+            <a th:href="@{/add-docgia}">
               Thêm Độc Giả						</a>
           </li>
           <li >
-            <a th:href="@{capthe-docgia}">
+            <a th:href="@{/capthe-docgia}">
               Danh Sách Cấp Thẻ					</a>
           </li>
 
@@ -250,7 +300,7 @@
 
       <div class="userNav">
         <ul>
-          <li><a href="" target="_blank">
+          <li><a href="/home">
             <img style="margin-top:7px;" th:src="@{../admin/images/icons/light/home.png}" />
             <span>Trang chủ</span>
           </a></li>
@@ -264,129 +314,124 @@
         </ul>
       </div>
 
-      <div class="clear"></div>
     </div>
   </div>
-
-  <!-- Main content -->
-
-  <!-- Title area -->
-  <div class="titleArea">
-    <div class="wrapper">
-      <div class="pageTitle">
-        <h5>Bảng điều khiển</h5>
-        <span>Trang quản lý hệ thống</span>
-      </div>
-
-      <div class="clear"></div>
-    </div>
-  </div>
-
-  <div class="line"></div>
-
-
-  <!-- Message -->
-
 
   <!-- Main content wrapper -->
   <div class="wrapper">
+    <div class="widget main_container">
+      <div class="wrapper">
 
-    <div class="widgets">
-      <!-- Stats -->
+        <!-- Form -->
+        <form class="form" id="form" th:action="@{/update-docgia}" th:object="${docGia}" method="post" enctype="multipart/form-data">
+          <div class="widget form_container">
+            <div class="title" >
+              <span>Chỉnh sửa thông tin Độc giả</span>
+            </div>
 
-      <!-- Amount -->
-
-
-      <!-- User -->
-
-
-      <div class="clear"></div>
-
-      <!-- Giao dich thanh cong gan day nhat -->
-
-      <div class="widget">
-        <div class="title">
-          <span class="titleIcon"><input type="checkbox" id="titleCheck" name="titleCheck" /></span>
-        </div>
-
-        <div class="wrapper">
-
-          <!-- Form -->
-          <form class="form" id="form" th:action="@{/update-docgia}" th:object="${docGia}" method="post" enctype="multipart/form-data">
-            <div class="widget">
-              <div class="title">
-                <h6>Chỉnh sửa thông tin Độc giả</h6>
-              </div>
-
-              <div class="tab_container">
-                <div id='tab1' class="tab_content pd0">
-                  <!-- Tên -->
-                  <div class="formRow">
-                    <label class="formLeft" for="param_name">Tên:<span class="req">*</span></label>
+            <div class="tab_container">
+              <div id='tab1' class="tab_content pd0">
+                <!-- Tên -->
+                <div class="formRow">
+                  <div class="formValidate">
+                    <label class="formLeft" for="param_name">Tên <span class="req">*</span></label>
                     <div class="formRight">
                       <span class="oneTwo"><input name="name" id="param_name" _autocheck="true" type="text" th:field="${docGia.tenDocGia}" /></span>
-                      <span name="name_autocheck" class="autocheck"></span>
-                      <div name="name_error" class="clear error"></div>
                     </div>
-                    <div class="clear"></div>
                   </div>
+                  <div style="color: red;" name="name_autocheck" class="autocheck check_name"></div>
+                </div>
 
-                  <!-- Tên -->
-                  <div class="formRow">
-                    <label class="formLeft" for="param_name">Số Điện Thoại:<span class="req">*</span></label>
+                <!-- Tên -->
+                <div class="formRow">
+                  <div class="formValidate">
+                    <label class="formLeft" for="param_name">Số Điện Thoại <span class="req">*</span></label>
                     <div class="formRight">
                       <span class="oneTwo"><input name="name"  _autocheck="true" type="text" th:field="${docGia.soDienThoai}" /></span>
-                      <span name="name_autocheck" class="autocheck"></span>
-                      <div name="name_error" class="clear error"></div>
                     </div>
-                    <div class="clear"></div>
                   </div>
-                  <!-- Tên -->
-                  <div class="formRow">
-                    <label class="formLeft" for="param_name">Email:<span class="req">*</span></label>
+                  <div style="color: red;" name="name_autocheck" class="autocheck check_phone"></div>
+                </div>
+                <!-- Tên -->
+                <div class="formRow">
+                  <div class="formValidate">
+                    <label class="formLeft" for="param_name">Email <span class="req">*</span></label>
                     <div class="formRight">
                       <span class="oneTwo"><input name="name" _autocheck="true" type="text" th:field="${docGia.email}" /></span>
-                      <span name="name_autocheck" class="autocheck"></span>
-                      <div name="name_error" class="clear error"></div>
                     </div>
-                    <div class="clear"></div>
                   </div>
-                  <!-- Tên -->
-                  <div class="formRow">
-                    <label class="formLeft" for="param_name">Căn cước công dân :<span class="req">*</span></label>
+                  <div style="color: red;" name="name_autocheck" class="autocheck check_email"></div>
+                </div>
+                <!-- Tên -->
+                <div class="formRow">
+                  <div class="formValidate">
+                    <label class="formLeft" for="param_name">Căn cước công dân <span class="req">*</span></label>
                     <div class="formRight">
                       <span class="oneTwo"><input name="name"  _autocheck="true" type="text" th:field="${docGia.CCCD}" /></span>
-                      <span name="name_autocheck" class="autocheck"></span>
-                      <div name="name_error" class="clear error"></div>
                     </div>
-                    <div class="clear"></div>
                   </div>
-                  <div class="col-lg">
-                    <input class="form-control" style="border-radius: 10px" th:field="${docGia.maDocGia}" th:value="${maDocGiax}" placeholder="" type="text" hidden>
-                  </div><!-- col -->
-
-                </div><!-- End tab_container-->
-
-                <div class="formSubmit">
-                  <input type="submit" value="Chỉnh sửa" class="redB" />
-                  <input type="reset" value="Hủy bỏ" class="basic" />
+                  <div style="color: red;" name="name_autocheck" class="autocheck check_cccd"></div>
                 </div>
+                <div class="col-lg">
+                  <input class="form-control" style="border-radius: 10px" th:field="${docGia.maDocGia}" th:value="${maDocGiax}" placeholder="" type="hidden" hidden>
+                </div><!-- col -->
+              </div><!-- End tab_container-->
+              <div class="formSubmit">
+                <button type="submit" class="redB" >Lưu</button>
+                <input type="reset" value="Hủy bỏ" class="basic" />
               </div>
             </div>
-          </form>
-        </div>
-        <div class="clear mt30"></div>
-
-
+          </div>
+        </form>
       </div>
-
     </div>
-
   </div>
-  <div class="clear mt30"></div>
-
-  <!-- Footer -->
 </div>
-<div class="clear"></div>
+</div>
+<script>
+  document.getElementById("form").addEventListener("submit", function(event) {
+    var array = document.getElementsByTagName('input');
+    var specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var numberRegex = /^\d+$/;
+    var phoneRegex = /^\d{10}$/;
+    if (array[0].value == "") {
+      document.querySelector('.check_name').innerHTML = "Tên không được để trống!";
+      event.preventDefault();
+    }  else if (specialCharRegex.test(array[0].value)) {
+      document.querySelector('.check_name').innerHTML = "Tên không được phép chứa ký tự đặc biệt!";
+      event.preventDefault();
+    } else {
+      document.querySelector('.check_name').innerHTML = "";
+    }
+    if (array[1].value == "") {
+      document.querySelector('.check_phone').innerHTML = "Số điện thoại không được để trống!";
+      event.preventDefault();
+    } else if(!numberRegex.test(array[1].value)) {
+      document.querySelector('.check_phone').innerHTML = "Vui lòng chỉ nhập số!";
+      event.preventDefault();
+    } else if(!phoneRegex.test(array[1].value)) {
+      document.querySelector('.check_phone').innerHTML = "Số điện thoại có 10 chữ số!";
+      event.preventDefault();
+    } else {
+      document.querySelector('.check_phone').innerHTML = "";
+    }
+    if (array[2].value == "") {
+      document.querySelector('.check_email').innerHTML = "Email không được để trống!";
+      event.preventDefault();
+    } else if(!emailRegex.test(array[2].value)) {
+      document.querySelector('.check_email').innerHTML = "Email sai định dạng!";
+      event.preventDefault();
+    } else {
+      document.querySelector('.check_email').innerHTML = "";
+    }
+    if (array[3].value == "") {
+      document.querySelector('.check_cccd').innerHTML = "CCCD không được để trống!";
+      event.preventDefault();
+    } else {
+      document.querySelector('.check_cccd').innerHTML = "";
+    }
+  });
+</script>
 </body>
 </html>

@@ -27,19 +27,25 @@ public class WebController {
         System.out.println(password);
        if(nhanSu!=null){
            if(nhanSu.getPassword().equals(password)){
+               //sau chuyển lại về trang home + chỉnh sửa trang home
                if(nhanSu.getRole().equals("admin")){
-                   return "home/home_admin";
-               } else  if(nhanSu.getRole().equals("user")){
-                   return "home/home_user";
+                   return "redirect:/list-sach";
+               } else  if(nhanSu.getRole().equals("truc_ban") ||nhanSu.getRole().equals("thong_ke")){
+                   return "redirect:/list-sach";
+
                }
                // Lấy thông tin người dùng từ cơ sở dữ liệu và đưa vào model để hiển thị trên view
                model.addAttribute("useronl", nhanSu);
 
            }
+
+       } else {
+
+           session.removeAttribute("username");
+           session.removeAttribute("password");
        }
-       session.removeAttribute("username");
-       session.removeAttribute("password");
-        return "home/welcom";
+//        model.addAttribute("error", "Tên đăng nhập hoặc mật khẩu không đúng.");
+        return "redirect:/login";
     }
 }
 

@@ -20,8 +20,10 @@ public interface NhanSuRepo extends JpaRepository<NhanSu,Long> {
     @Query("select u from nhan_su u where u.soDienThoai like %:key% or u.hoTen like %:key% or u.Username like %:key% order by u.user_id desc ")
     List<NhanSu> searchPro(String key);
     // Tìm kiếm theo username. Dùng trong truy vấn role
-    @Query("SELECT u FROM nhan_su u WHERE u.Username = :Username and u.checkUser=true")
+    @Query("SELECT u FROM nhan_su u WHERE u.Username = :Username ")
     NhanSu findByUsername(@Param("Username") String Username);
     // Tìm kiếm xem nhân sự đã có trong mục nhân viên chưa
+//    @Query("select u from nhan_su u where u.user_id=:user_id ")
+//    Optional<NhanSu> findById(Long user_id);
 
 }

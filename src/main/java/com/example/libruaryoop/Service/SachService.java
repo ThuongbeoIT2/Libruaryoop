@@ -1,10 +1,10 @@
 package com.example.libruaryoop.Service;
 
-import com.example.libruaryoop.Model.NhanSu;
 import com.example.libruaryoop.Model.Sach;
 import com.example.libruaryoop.Repository.SachRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -57,7 +57,6 @@ public class SachService {
             existing.setTacGia(sach.getTacGia());
             existing.setDaMuon(sach.getDaMuon());
             existing.setSoLuongCon(sach.getSoLuongCon());
-            existing.setCheckSach(true);
             existing.setNXB(sach.getNXB());
             existing.setNamXB(sach.getNamXB());
             return sachRepo.save(existing);

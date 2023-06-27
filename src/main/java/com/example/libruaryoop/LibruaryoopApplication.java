@@ -2,7 +2,7 @@ package com.example.libruaryoop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import  static org.assertj.core.api.Assertions.*;
+
 @SpringBootApplication
 public class LibruaryoopApplication {
 

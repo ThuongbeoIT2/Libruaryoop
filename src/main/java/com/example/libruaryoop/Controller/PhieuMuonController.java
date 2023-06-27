@@ -144,7 +144,7 @@ public class PhieuMuonController {
         for (int i = 0; i < phieuMuondto.getSoDongMuon(); i++) {
             chiTietMuonDto.addChiTietMuon(new ChiTietMuon());
         }
-
+        model.addAttribute("sach",sachService.findAllCheckTrue());
         model.addAttribute("chitietList", chiTietMuonDto);
         return "admin/phieumuon/add_chitiet";
     }
@@ -170,6 +170,10 @@ public class PhieuMuonController {
             sachService.updateSach(sach);
             chiTietMuonService.addChiTiet(chiTietMuon);
         });
+//        PhieuMuon foundpm = phieuMuonService.findPhieuMuonById(phieuMuondto.getMaPhieuMuon());
+//        System.out.println("so the"+ foundpm.getTtv().getSoThe());
+//        TheTV theTV = theTVService.findTTVById(phieuMuondto.getTtv().getSoThe());
+//        theTV.setCheckTTV(false);
 
         return "redirect:/list-phieumuon";
     }
@@ -188,6 +192,11 @@ public class PhieuMuonController {
             //
             sachService.updateSach(sach);
         });
+        //
+//        System.out.println(maPhieuMuon);
+//        TheTV theTV = theTVService.findTTVById(maPhieuMuon);
+//        theTV.setCheckTTV(true);
+
         phieuMuonService.deleteById(maPhieuMuon);
         return "redirect:/list-phieumuon";
     }

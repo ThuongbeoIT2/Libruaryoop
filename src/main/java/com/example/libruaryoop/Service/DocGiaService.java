@@ -56,7 +56,6 @@ public class DocGiaService {
             existing.setSoDienThoai(docGia.getSoDienThoai());
             existing.setCCCD(docGia.getCCCD());
             existing.setEmail(docGia.getEmail());
-            existing.setCheckDocGia(true);
             return docGiaRepo.save(existing);
         }
         return null;

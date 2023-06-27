@@ -48,7 +48,6 @@ public class TheTVService {
         if(existing!=null){
             existing.setNgayBatDau(theTV.getNgayBatDau());
             existing.setNgayHetHan(theTV.getNgayHetHan());
-            existing.setCheckTTV(true);
             System.out.println(existing);
             return theTVRepo.save(existing);
         }

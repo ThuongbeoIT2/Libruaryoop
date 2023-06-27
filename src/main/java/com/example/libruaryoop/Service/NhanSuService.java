@@ -61,7 +61,7 @@ public class NhanSuService {
             existing.setUsername(user.getUsername());
             existing.setPassword(user.getPassword());
             existing.setRole(user.getRole());
-            existing.setCheckUser(true);
+
             System.out.println(existing);
             return nhanSuRepo.save(existing);
         }
